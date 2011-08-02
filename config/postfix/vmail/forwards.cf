@@ -1,0 +1,5 @@
+hosts = 127.0.0.1
+user = postfix
+password = ********
+dbname = mail
+query = SELECT forward FROM account WHERE username='%u' AND domain='%d' AND forward IS NOT NULL AND forward != '' AND active=1

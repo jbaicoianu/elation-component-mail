@@ -1,0 +1,5 @@
+hosts = 127.0.0.1
+user = postfix
+password = ********
+dbname = mail
+query = SELECT transport FROM domain WHERE domain='%s'

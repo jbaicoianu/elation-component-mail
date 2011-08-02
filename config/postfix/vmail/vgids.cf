@@ -1,0 +1,5 @@
+hosts = 127.0.0.1
+user = postfix
+password = ********
+dbname = mail
+query = SELECT vgid FROM account WHERE username="%u" AND domain="%d" AND maildir IS NOT NULL

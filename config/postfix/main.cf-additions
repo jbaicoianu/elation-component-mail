@@ -1,0 +1,15 @@
+local_recipient_maps = $alias_maps, $virtual_maps, unix:passwd.byname
+virtual_mailbox_base = /var/mail
+
+virtual_transport = dovecot
+virtual_mailbox_lock = dotlock
+virtual_minimum_uid = 8
+dovecot_destination_recipient_limit = 1
+
+virtual_mailbox_maps = mysql:/etc/postfix/vmail/accounts.cf
+virtual_alias_maps = mysql:/etc/postfix/vmail/forwards.cf
+transport_maps = mysql:/etc/postfix/vmail/transport.cf
+virtual_uid_maps = mysql:/etc/postfix/vmail/vuids.cf
+virtual_gid_maps = mysql:/etc/postfix/vmail/vgids.cf
+
+

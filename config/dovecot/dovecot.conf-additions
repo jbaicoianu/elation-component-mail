@@ -1,0 +1,8 @@
+auth default {
+  passdb sql {
+    args = /etc/dovecot/dovecot-sql.conf 
+  }
+  userdb sql {
+    args = /etc/dovecot/dovecot-sql.conf 
+  }
+}
