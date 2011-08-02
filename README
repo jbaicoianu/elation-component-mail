@@ -1,0 +1,7 @@
+Elation Mail Account Management Component
+
+This component provides an administrative interface to a database-backed virtual mail system which makes it easy to manage email accounts and forwards for any number of domains.
+
+Currently this setup is in use with postfix+dovecot+mysql, and configuration files are included for that combination.  This schema should work with most servers (SMTP/IMAP/POP3) which support database-driven virtual hosting - if you want to use it on a different setup, we'd be happy to accept configuration files for other servers.
+
+This setup is loosely based on the setup described in http://johnny.chadda.se/article/mail-server-howto-postfix-and-dovecot-with-mysql-and-tlsssl-postgrey-and-dspam/ (or possibly an earlier version)
