@@ -4,18 +4,19 @@ This component provides an administrative interface to a database-backed virtual
 
 Currently this setup is in use with postfix+dovecot+mysql, and configuration files are included for that combination.  This schema should work with most servers (SMTP/IMAP/POP3) which support database-driven virtual hosting - if you want to use it on a different setup, we'd be happy to accept configuration files for other servers.
 
-## Installation
+Installation
+============
 
 This setup is loosely based on the setup described in http://johnny.chadda.se/article/mail-server-howto-postfix-and-dovecot-with-mysql-and-tlsssl-postgrey-and-dspam/ (or possibly an earlier version).  It's recommended you read through that while performing any setup of the various software packges, as it's likely they have more detailed information than is available here.
 
-### Postfix:
+Postfix:
     $ cp -r config/postfix/vmail /etc/postfix
     $ chmod 600 /etc/postfix/vmail/*
 
-Then, manually merge changes from config/postfix/main.cf-additions into /etc/postfix/main.cf
+    Then, manually merge changes from config/postfix/main.cf-additions into /etc/postfix/main.cf
 
-### Dovecot
+Dovecot:
     $ cp config/dovecot/dovecot-sql.conf /etc/dovecot/
 
-Then, manually merge changes from config/dovecot/dovecot.conf-additions into /etc/dovecot/dovecot.conf
+    Then, manually merge changes from config/dovecot/dovecot.conf-additions into /etc/dovecot/dovecot.conf
 
