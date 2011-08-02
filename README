@@ -1,4 +1,4 @@
-# Elation Mail Account Management Component
+Elation Mail Account Management Component
 
 This component provides an administrative interface to a database-backed virtual mail system which makes it easy to manage email accounts and forwards for any number of domains.  It is intended to be run as within the Elation framework.
 
