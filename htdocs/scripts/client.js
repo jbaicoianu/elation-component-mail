@@ -342,10 +342,7 @@ console.log('bye bye');
         classname: 'mail_message_view_content'
       });
 
-      var iframecss = elation.html.create('link');
-      iframecss.rel = 'stylesheet';
-      iframecss.href = '/css/mail/client.css';
-      this.body_iframe.container.contentDocument.head.appendChild(iframecss);
+      this.body_iframe.addcss('/css/mail/client.css');
       
 
       this.msgapi = elation.collection.jsonapi({
